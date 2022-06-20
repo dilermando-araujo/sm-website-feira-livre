@@ -81,6 +81,9 @@ small {
 }
 header {
   height: 40px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
 }
 
 header h1 {
@@ -112,7 +115,8 @@ header nav ul li a {
 #image-principal {
   height: 300px;
   padding-top: 1px;
-  background: #e8eced url('../images/marcelo.jpg') no-repeat center;
+  background: #e8eced url('../images/feiralivre-4.jpg') center;
+  background-size: cover;
 }
 
 #image-principal div h2 {
@@ -313,4 +317,40 @@ tbody tr {
 td,
 th {
   text-align: left;
+}
+
+.text-next-to-img {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  padding: 0 5%;
+  margin-bottom: 20px;
+}
+
+.text-next-to-img .item {
+  width: 50%;
+}
+
+.text-next-to-img img {
+  width: 420px;
+}
+
+.customer-comment-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.customer-comment-container .comment-container {
+  text-align: right;
+  width: 80%;
+}
+
+.customer-comment-container .photo-container {
+  width: 20%;
+}
+
+.customer-comment-container .photo-container img {
+  width: 80px;
+  border-radius: 50px;
 }
